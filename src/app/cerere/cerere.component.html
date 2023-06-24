@@ -1,0 +1,21 @@
+<div class="col-md-5 offset-md-3" >
+  <h3>Cerere adeverință nouă</h3>
+  <p class="justified-text">Completați adeverința așa cum doriți să o primiți. Dacă nu aveți mențiuni lăsați liberă căsuța.</p>
+  <form (ngSubmit)="save()" >
+
+    <div>
+      <label>Motiv</label>
+      <input type="text" id="motiv" class="form-control" [(ngModel)]="c.motiv" name="motiv">
+    </div>
+
+    <div>
+      <label>Mentiune</label>
+      <input type="text" id="mentiune" class="form-control" [(ngModel)]="c.mentiuni" name="mentiuni">
+    </div>
+
+    <br>
+
+    <button class="btn btn-success" type="submit">Trimite</button>
+  </form>
+</div>
+

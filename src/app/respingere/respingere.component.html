@@ -1,0 +1,19 @@
+<div class="col-md-5 offset-md-3" >
+  <h3>Respingerea adeverinței</h3>
+  <form (ngSubmit)="onRespingere()" >
+    <div>
+      <h5 style="text-align: justify;"> Studentul/studenta <i>{{numestud}}</i> cere adeverința pentru a-i servi la: <i>{{nevoie}}</i>.<br>Cu mențiunile următoare: <i>{{mentiune}}</i></h5>
+    </div>
+
+    <div>
+      <label>Motiv respingere</label>
+      <input type="text" id="m" class="form-control" [(ngModel)]="motiv" name="motiv">
+    </div>
+
+    <br>
+
+    <button class="btn btn-success" type="submit">Respinge!</button>
+  </form>
+  <br>
+  <a href="/list">Inapoi la lista</a>
+</div>

@@ -1,0 +1,26 @@
+
+<h2>Bună ziua, domnule/doamnă {{rol}}! Aici este lista cu adeverințele:</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Nume student</th>
+    <th>Motiv</th>
+    <th>Mențiuni</th>
+    <th>Status</th>
+    <th>Acțiune</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <tr  *ngFor="let adv of Adeverinte">
+    <td>{{adv.student.nume}}</td>
+    <td>{{adv.motiv}}</td>
+    <td>{{adv.mentiuni}}</td>
+    <td>{{adv.status}}</td>
+    <td><button (click)="aprobare(adv.numar)" class="green-button"> Aprobare</button><button class="red-button" (click)="respingere(adv.numar, adv.motiv, adv.mentiuni, adv.student.nume)">Respingere</button>
+      <button class="orange-button" (click)="confirmare_stergere(adv.numar)">Ștergere</button></td>
+  </tr>
+  </tbody>
+</table>
+<p>Ivan Fernolendt Marius Florian</p>
+

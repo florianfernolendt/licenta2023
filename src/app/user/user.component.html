@@ -1,0 +1,24 @@
+
+<div class="col-md-5 offset-md-3" >
+  <h3>Autentificare</h3>
+  <form (ngSubmit)="login()" >
+
+    <div>
+      <label>Email</label>
+      <input type="email" id="a" class="form-control" [(ngModel)]="email" name="motiv" placeholder="prenume.nume@student.upt.ro">
+    </div>
+
+    <div>
+      <label>Parola</label>
+      <input type="password" id="b" class="form-control" [(ngModel)]="parola" name="mentiune">
+    </div>
+
+    <br>
+
+    <button class="btn btn-success" type="submit">Login</button>
+  </form>
+</div>
+
+<br>
+<br>
+<br>
